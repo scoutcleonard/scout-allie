@@ -24,6 +24,8 @@ ggplot(penguins, aes(x =  species, y = body_mass_g)) +
   labs(x = "Species", 
        y = "Body Mass (g)", 
        title = "Body Mass Range by Species"
-  )
+  ) +
+  theme(plot.background = element_rect(fill = "navy"),
+        axis.title = element_text(color = "white"))
 ```
 
