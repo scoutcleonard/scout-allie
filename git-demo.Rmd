@@ -11,8 +11,19 @@ library(tidyverse)
 library(palmerpenguins)
 ```
 
+
+
+
+
+look at us go!
+
 ```{r}
 ggplot(penguins, aes(x =  species, y = body_mass_g)) +
-  geom_violin(aes(fill = species))
+  geom_violin(aes(fill = species)) +
+  theme_minimal() +
+  labs(x = "Species", 
+       y = "Body Mass (g)", 
+       title = "Body Mass Range by Species"
+  )
 ```
 
